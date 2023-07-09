@@ -1,7 +1,11 @@
+#!/usr/bin/env python3
+
+# Imports
 import os
 import sys
 import random
 
+# Functions
 def ask_for_number() -> int:
     '''
     Function to ask user to input a number. Returns the number when the input is correct.
@@ -26,6 +30,7 @@ def ask_for_number() -> int:
     # return N
     return N
 
+# Executable portion
 if __name__ == "__main__":
 
     # Clear terminal screen
