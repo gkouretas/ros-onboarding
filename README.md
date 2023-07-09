@@ -1,2 +1,2 @@
 # ros-onboarding
-ROS-related labwork from ELEN 133L
+ROS-related labwork from ELEN 131L
