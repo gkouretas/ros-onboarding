@@ -1,0 +1,2 @@
+float32 random_value
+string activity

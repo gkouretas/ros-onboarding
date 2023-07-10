@@ -3,6 +3,6 @@ prefix=/home/gkouretas/code/ros-onboarding/ros_ws/devel
 Name: pub_sub
 Description: Description of pub_sub
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/gkouretas/code/ros-onboarding/ros_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: 
