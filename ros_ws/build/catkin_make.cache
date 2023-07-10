@@ -1,2 +1,2 @@
-pub_sub
+ros_practice
 -DCATKIN_DEVEL_PREFIX=/home/gkouretas/code/ros-onboarding/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/gkouretas/code/ros-onboarding/ros_ws/install -G Unix Makefiles

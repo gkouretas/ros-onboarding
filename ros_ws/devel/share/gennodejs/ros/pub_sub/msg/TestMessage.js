@@ -1,6 +1,6 @@
 // Auto-generated. Do not edit!
 
-// (in-package pub_sub.msg)
+// (in-package ros_practice.msg)
 
 
 "use strict";
@@ -65,7 +65,7 @@ class TestMessage {
 
   static datatype() {
     // Returns string type for a message object
-    return 'pub_sub/TestMessage';
+    return 'ros_practice/TestMessage';
   }
 
   static md5sum() {

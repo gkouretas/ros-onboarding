@@ -54,13 +54,13 @@ CMAKE_BINARY_DIR = /home/gkouretas/code/ros-onboarding/ros_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: pub_sub/all
+all: ros_practice/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: pub_sub/preinstall
+preinstall: ros_practice/preinstall
 
 .PHONY : preinstall
 
@@ -71,7 +71,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: pub_sub/clean
+clean: ros_practice/clean
 
 .PHONY : clean
 
@@ -133,43 +133,43 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
-# Directory level rules for directory pub_sub
+# Directory level rules for directory ros_practice
 
 # Recursive "all" directory target.
-pub_sub/all: pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all
+ros_practice/all: ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all
 
-.PHONY : pub_sub/all
+.PHONY : ros_practice/all
 
 # Recursive "preinstall" directory target.
-pub_sub/preinstall:
+ros_practice/preinstall:
 
-.PHONY : pub_sub/preinstall
+.PHONY : ros_practice/preinstall
 
 # Recursive "clean" directory target.
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_gennodejs.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_gencpp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_genlisp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_geneus.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_generate_messages.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_genpy.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-pub_sub/clean: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_genpy.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_gennodejs.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_genlisp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_geneus.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_generate_messages.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/ros_practice_gencpp.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/clean
+ros_practice/clean: ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
-.PHONY : pub_sub/clean
+.PHONY : ros_practice/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -416,612 +416,612 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_genpy.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all: pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=14,15 "Built target pub_sub_generate_messages_py"
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all
+ros_practice/CMakeFiles/ros_practice_genpy.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_genpy.dir/build.make ros_practice/CMakeFiles/ros_practice_genpy.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_genpy.dir/build.make ros_practice/CMakeFiles/ros_practice_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target ros_practice_genpy"
+.PHONY : ros_practice/CMakeFiles/ros_practice_genpy.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/ros_practice_genpy.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
+.PHONY : ros_practice/CMakeFiles/ros_practice_genpy.dir/rule
 
 # Convenience name for target.
-pub_sub_generate_messages_py: pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
+ros_practice_genpy: ros_practice/CMakeFiles/ros_practice_genpy.dir/rule
 
-.PHONY : pub_sub_generate_messages_py
+.PHONY : ros_practice_genpy
 
 # clean rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/clean
+ros_practice/CMakeFiles/ros_practice_genpy.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_genpy.dir/build.make ros_practice/CMakeFiles/ros_practice_genpy.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_genpy.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_gennodejs.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_gennodejs.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_gennodejs.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target pub_sub_gennodejs"
-.PHONY : pub_sub/CMakeFiles/pub_sub_gennodejs.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/all: ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/all: ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/all: ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=14,15 "Built target ros_practice_generate_messages_py"
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_gennodejs.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/rule
 
 # Convenience name for target.
-pub_sub_gennodejs: pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
+ros_practice_generate_messages_py: ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/rule
 
-.PHONY : pub_sub_gennodejs
+.PHONY : ros_practice_generate_messages_py
 
 # clean rule for target.
-pub_sub/CMakeFiles/pub_sub_gennodejs.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_gennodejs.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_gennodejs.dir/clean
+ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_gennodejs.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all: pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=13 "Built target pub_sub_generate_messages_nodejs"
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all
+ros_practice/CMakeFiles/ros_practice_gennodejs.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_gennodejs.dir/build.make ros_practice/CMakeFiles/ros_practice_gennodejs.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_gennodejs.dir/build.make ros_practice/CMakeFiles/ros_practice_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target ros_practice_gennodejs"
+.PHONY : ros_practice/CMakeFiles/ros_practice_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/ros_practice_gennodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
+.PHONY : ros_practice/CMakeFiles/ros_practice_gennodejs.dir/rule
 
 # Convenience name for target.
-pub_sub_generate_messages_nodejs: pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
+ros_practice_gennodejs: ros_practice/CMakeFiles/ros_practice_gennodejs.dir/rule
 
-.PHONY : pub_sub_generate_messages_nodejs
+.PHONY : ros_practice_gennodejs
 
 # clean rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/clean
+ros_practice/CMakeFiles/ros_practice_gennodejs.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_gennodejs.dir/build.make ros_practice/CMakeFiles/ros_practice_gennodejs.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_gennodejs.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_gencpp.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_genlisp.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_gencpp.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_gencpp.dir/build.make pub_sub/CMakeFiles/pub_sub_gencpp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_gencpp.dir/build.make pub_sub/CMakeFiles/pub_sub_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target pub_sub_gencpp"
-.PHONY : pub_sub/CMakeFiles/pub_sub_gencpp.dir/all
+ros_practice/CMakeFiles/ros_practice_genlisp.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_genlisp.dir/build.make ros_practice/CMakeFiles/ros_practice_genlisp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_genlisp.dir/build.make ros_practice/CMakeFiles/ros_practice_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target ros_practice_genlisp"
+.PHONY : ros_practice/CMakeFiles/ros_practice_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/ros_practice_genlisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_gencpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
+.PHONY : ros_practice/CMakeFiles/ros_practice_genlisp.dir/rule
 
 # Convenience name for target.
-pub_sub_gencpp: pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
+ros_practice_genlisp: ros_practice/CMakeFiles/ros_practice_genlisp.dir/rule
 
-.PHONY : pub_sub_gencpp
+.PHONY : ros_practice_genlisp
 
 # clean rule for target.
-pub_sub/CMakeFiles/pub_sub_gencpp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_gencpp.dir/build.make pub_sub/CMakeFiles/pub_sub_gencpp.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_gencpp.dir/clean
+ros_practice/CMakeFiles/ros_practice_genlisp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_genlisp.dir/build.make ros_practice/CMakeFiles/ros_practice_genlisp.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_genlisp.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_geneus.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all: pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=12 "Built target pub_sub_generate_messages_lisp"
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all
+ros_practice/CMakeFiles/ros_practice_geneus.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_geneus.dir/build.make ros_practice/CMakeFiles/ros_practice_geneus.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_geneus.dir/build.make ros_practice/CMakeFiles/ros_practice_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target ros_practice_geneus"
+.PHONY : ros_practice/CMakeFiles/ros_practice_geneus.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all
+ros_practice/CMakeFiles/ros_practice_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/rule
+.PHONY : ros_practice/CMakeFiles/ros_practice_geneus.dir/rule
 
 # Convenience name for target.
-pub_sub_generate_messages_lisp: pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/rule
+ros_practice_geneus: ros_practice/CMakeFiles/ros_practice_geneus.dir/rule
 
-.PHONY : pub_sub_generate_messages_lisp
+.PHONY : ros_practice_geneus
 
 # clean rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/clean
+ros_practice/CMakeFiles/ros_practice_geneus.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_geneus.dir/build.make ros_practice/CMakeFiles/ros_practice_geneus.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_geneus.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/all: ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/all: ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/all: ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=12 "Built target ros_practice_generate_messages_lisp"
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+ros_practice_generate_messages_lisp: ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/rule
+
+.PHONY : ros_practice_generate_messages_lisp
+
+# clean rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target ros_practice/CMakeFiles/ros_practice_generate_messages.dir
+
+# All Build rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_py.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_lisp.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target ros_practice_generate_messages"
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages.dir/rule
+
+# Convenience name for target.
+ros_practice_generate_messages: ros_practice/CMakeFiles/ros_practice_generate_messages.dir/rule
+
+.PHONY : ros_practice_generate_messages
+
+# clean rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir
+
+# All Build rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/all: ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/all: ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/all: ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=10,11 "Built target ros_practice_generate_messages_eus"
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+ros_practice_generate_messages_eus: ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/rule
+
+.PHONY : ros_practice_generate_messages_eus
+
+# clean rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_eus: pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+geometry_msgs_generate_messages_eus: ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_eus
 
 # clean rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir
+# Target rules for target ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+geometry_msgs_generate_messages_py: ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_py
 
 # clean rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_genlisp.dir
+# Target rules for target ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_genlisp.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_genlisp.dir/build.make pub_sub/CMakeFiles/pub_sub_genlisp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_genlisp.dir/build.make pub_sub/CMakeFiles/pub_sub_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target pub_sub_genlisp"
-.PHONY : pub_sub/CMakeFiles/pub_sub_genlisp.dir/all
-
-# Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_genlisp.dir/rule
-
-# Convenience name for target.
-pub_sub_genlisp: pub_sub/CMakeFiles/pub_sub_genlisp.dir/rule
-
-.PHONY : pub_sub_genlisp
-
-# clean rule for target.
-pub_sub/CMakeFiles/pub_sub_genlisp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_genlisp.dir/build.make pub_sub/CMakeFiles/pub_sub_genlisp.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_genlisp.dir/clean
-
-#=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_geneus.dir
-
-# All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_geneus.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_geneus.dir/build.make pub_sub/CMakeFiles/pub_sub_geneus.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_geneus.dir/build.make pub_sub/CMakeFiles/pub_sub_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target pub_sub_geneus"
-.PHONY : pub_sub/CMakeFiles/pub_sub_geneus.dir/all
-
-# Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
-
-# Convenience name for target.
-pub_sub_geneus: pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
-
-.PHONY : pub_sub_geneus
-
-# clean rule for target.
-pub_sub/CMakeFiles/pub_sub_geneus.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_geneus.dir/build.make pub_sub/CMakeFiles/pub_sub_geneus.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_geneus.dir/clean
-
-#=============================================================================
-# Target rules for target pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_cpp: ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_cpp
 
 # clean rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+# Target rules for target ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_nodejs: pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+geometry_msgs_generate_messages_nodejs: ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_nodejs
 
 # clean rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_generate_messages.dir
+# Target rules for target ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target pub_sub_generate_messages"
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all
-
-# Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
-
-# Convenience name for target.
-pub_sub_generate_messages: pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
-
-.PHONY : pub_sub_generate_messages
-
-# clean rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages.dir/clean
-
-#=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_genpy.dir
-
-# All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_genpy.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_genpy.dir/build.make pub_sub/CMakeFiles/pub_sub_genpy.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_genpy.dir/build.make pub_sub/CMakeFiles/pub_sub_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target pub_sub_genpy"
-.PHONY : pub_sub/CMakeFiles/pub_sub_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_genpy.dir/rule
-
-# Convenience name for target.
-pub_sub_genpy: pub_sub/CMakeFiles/pub_sub_genpy.dir/rule
-
-.PHONY : pub_sub_genpy
-
-# clean rule for target.
-pub_sub/CMakeFiles/pub_sub_genpy.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_genpy.dir/build.make pub_sub/CMakeFiles/pub_sub_genpy.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_genpy.dir/clean
-
-#=============================================================================
-# Target rules for target pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+# Target rules for target ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_lisp: pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+geometry_msgs_generate_messages_lisp: ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_lisp
 
 # clean rule for target.
-pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : pub_sub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : ros_practice/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir
+# Target rules for target ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_eus: pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+std_msgs_generate_messages_eus: ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 .PHONY : std_msgs_generate_messages_eus
 
 # clean rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/all: ros_practice/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/all: ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/all: ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=13 "Built target ros_practice_generate_messages_nodejs"
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+ros_practice_generate_messages_nodejs: ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/rule
+
+.PHONY : ros_practice_generate_messages_nodejs
+
+# clean rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir
+
+# All Build rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/all: ros_practice/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/all: ros_practice/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/all: ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=9 "Built target ros_practice_generate_messages_cpp"
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+ros_practice_generate_messages_cpp: ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/rule
+
+.PHONY : ros_practice_generate_messages_cpp
+
+# clean rule for target.
+ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/build.make ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir
+# Target rules for target ros_practice/CMakeFiles/ros_practice_gencpp.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all: pub_sub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=9 "Built target pub_sub_generate_messages_cpp"
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all
+ros_practice/CMakeFiles/ros_practice_gencpp.dir/all: ros_practice/CMakeFiles/ros_practice_generate_messages_cpp.dir/all
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_gencpp.dir/build.make ros_practice/CMakeFiles/ros_practice_gencpp.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_gencpp.dir/build.make ros_practice/CMakeFiles/ros_practice_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target ros_practice_gencpp"
+.PHONY : ros_practice/CMakeFiles/ros_practice_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/ros_practice_gencpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/ros_practice_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/rule
+.PHONY : ros_practice/CMakeFiles/ros_practice_gencpp.dir/rule
 
 # Convenience name for target.
-pub_sub_generate_messages_cpp: pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/rule
+ros_practice_gencpp: ros_practice/CMakeFiles/ros_practice_gencpp.dir/rule
 
-.PHONY : pub_sub_generate_messages_cpp
-
-# clean rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
+.PHONY : ros_practice_gencpp
 
 # clean rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+ros_practice/CMakeFiles/ros_practice_gencpp.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/ros_practice_gencpp.dir/build.make ros_practice/CMakeFiles/ros_practice_gencpp.dir/clean
+.PHONY : ros_practice/CMakeFiles/ros_practice_gencpp.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir
+# Target rules for target ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all: pub_sub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num=10,11 "Built target pub_sub_generate_messages_eus"
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-pub_sub_generate_messages_eus: pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/rule
-
-.PHONY : pub_sub_generate_messages_eus
-
-# clean rule for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/clean
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/clean
-
-#=============================================================================
-# Target rules for target pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+std_msgs_generate_messages_nodejs: ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : std_msgs_generate_messages_nodejs
 
 # clean rule for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir
+# Target rules for target ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir
 
 # All Build rule for target.
-pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all:
-	$(MAKE) -f pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/build.make pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/depend
-	$(MAKE) -f pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/build.make pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target _pub_sub_generate_messages_check_deps_Random"
-.PHONY : pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all
+ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/build.make ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/build.make ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target _ros_practice_generate_messages_check_deps_Random"
+.PHONY : ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all
 
 # Build rule for subdir invocation for target.
-pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/rule: cmake_check_build_system
+ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
-.PHONY : pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/rule
+.PHONY : ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/rule
 
 # Convenience name for target.
-_pub_sub_generate_messages_check_deps_Random: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/rule
+_ros_practice_generate_messages_check_deps_Random: ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/rule
 
-.PHONY : _pub_sub_generate_messages_check_deps_Random
+.PHONY : _ros_practice_generate_messages_check_deps_Random
 
 # clean rule for target.
-pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/clean:
-	$(MAKE) -f pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/build.make pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/clean
-.PHONY : pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Random.dir/clean
+ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/build.make ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/clean
+.PHONY : ros_practice/CMakeFiles/_ros_practice_generate_messages_check_deps_Random.dir/clean
+
+#=============================================================================
+# Target rules for target ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gkouretas/code/ros-onboarding/ros_ws/build/CMakeFiles 0
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : ros_practice/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

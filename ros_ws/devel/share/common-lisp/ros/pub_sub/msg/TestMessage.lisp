@@ -1,7 +1,7 @@
 ; Auto-generated. Do not edit!
 
 
-(cl:in-package pub_sub-msg)
+(cl:in-package ros_practice-msg)
 
 
 ;//! \htmlinclude TestMessage.msg.html
@@ -25,16 +25,16 @@
 (cl:defmethod cl:initialize-instance :after ((m <TestMessage>) cl:&rest args)
   (cl:declare (cl:ignorable args))
   (cl:unless (cl:typep m 'TestMessage)
-    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name pub_sub-msg:<TestMessage> is deprecated: use pub_sub-msg:TestMessage instead.")))
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name ros_practice-msg:<TestMessage> is deprecated: use ros_practice-msg:TestMessage instead.")))
 
 (cl:ensure-generic-function 'random_value-val :lambda-list '(m))
 (cl:defmethod random_value-val ((m <TestMessage>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader pub_sub-msg:random_value-val is deprecated.  Use pub_sub-msg:random_value instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_practice-msg:random_value-val is deprecated.  Use ros_practice-msg:random_value instead.")
   (random_value m))
 
 (cl:ensure-generic-function 'activity-val :lambda-list '(m))
 (cl:defmethod activity-val ((m <TestMessage>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader pub_sub-msg:activity-val is deprecated.  Use pub_sub-msg:activity instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_practice-msg:activity-val is deprecated.  Use ros_practice-msg:activity instead.")
   (activity m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <TestMessage>) ostream)
   "Serializes a message object of type '<TestMessage>"
@@ -70,10 +70,10 @@
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<TestMessage>)))
   "Returns string type for a message object of type '<TestMessage>"
-  "pub_sub/TestMessage")
+  "ros_practice/TestMessage")
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'TestMessage)))
   "Returns string type for a message object of type 'TestMessage"
-  "pub_sub/TestMessage")
+  "ros_practice/TestMessage")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<TestMessage>)))
   "Returns md5sum for a message object of type '<TestMessage>"
   "06e14fd41d63e9eb5e32e490cf8ee14a")

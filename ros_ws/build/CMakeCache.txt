@@ -477,10 +477,10 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
 //Value Computed by CMake
-pub_sub_BINARY_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/build/pub_sub
+ros_practice_BINARY_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/build/ros_practice
 
 //Value Computed by CMake
-pub_sub_SOURCE_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/src/pub_sub
+ros_practice_SOURCE_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/src/ros_practice
 
 //The directory containing a CMake configuration file for roscpp_serialization.
 roscpp_serialization_DIR:PATH=/opt/ros/noetic/share/roscpp_serialization/cmake

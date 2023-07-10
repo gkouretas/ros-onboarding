@@ -1,22 +1,22 @@
 ;; Auto-generated. Do not edit!
 
 
-(when (boundp 'pub_sub::Random)
-  (if (not (find-package "PUB_SUB"))
-    (make-package "PUB_SUB"))
-  (shadow 'Random (find-package "PUB_SUB")))
-(unless (find-package "PUB_SUB::RANDOM")
-  (make-package "PUB_SUB::RANDOM"))
+(when (boundp 'ros_practice::Random)
+  (if (not (find-package "ros_practice"))
+    (make-package "ros_practice"))
+  (shadow 'Random (find-package "ros_practice")))
+(unless (find-package "ros_practice::RANDOM")
+  (make-package "ros_practice::RANDOM"))
 
 (in-package "ROS")
 ;;//! \htmlinclude Random.msg.html
 
 
-(defclass pub_sub::Random
+(defclass ros_practice::Random
   :super ros::object
   :slots (_random_value _activity ))
 
-(defmethod pub_sub::Random
+(defmethod ros_practice::Random
   (:init
    (&key
     ((:random_value __random_value) 0.0)
@@ -60,15 +60,15 @@
    self)
   )
 
-(setf (get pub_sub::Random :md5sum-) "06e14fd41d63e9eb5e32e490cf8ee14a")
-(setf (get pub_sub::Random :datatype-) "pub_sub/Random")
-(setf (get pub_sub::Random :definition-)
+(setf (get ros_practice::Random :md5sum-) "06e14fd41d63e9eb5e32e490cf8ee14a")
+(setf (get ros_practice::Random :datatype-) "ros_practice/Random")
+(setf (get ros_practice::Random :definition-)
       "float32 random_value
 string activity
 ")
 
 
 
-(provide :pub_sub/Random "06e14fd41d63e9eb5e32e490cf8ee14a")
+(provide :ros_practice/Random "06e14fd41d63e9eb5e32e490cf8ee14a")
 
 

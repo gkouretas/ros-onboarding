@@ -1,22 +1,22 @@
 ;; Auto-generated. Do not edit!
 
 
-(when (boundp 'pub_sub::TestMessage)
-  (if (not (find-package "PUB_SUB"))
-    (make-package "PUB_SUB"))
-  (shadow 'TestMessage (find-package "PUB_SUB")))
-(unless (find-package "PUB_SUB::TESTMESSAGE")
-  (make-package "PUB_SUB::TESTMESSAGE"))
+(when (boundp 'ros_practice::TestMessage)
+  (if (not (find-package "ros_practice"))
+    (make-package "ros_practice"))
+  (shadow 'TestMessage (find-package "ros_practice")))
+(unless (find-package "ros_practice::TESTMESSAGE")
+  (make-package "ros_practice::TESTMESSAGE"))
 
 (in-package "ROS")
 ;;//! \htmlinclude TestMessage.msg.html
 
 
-(defclass pub_sub::TestMessage
+(defclass ros_practice::TestMessage
   :super ros::object
   :slots (_random_value _activity ))
 
-(defmethod pub_sub::TestMessage
+(defmethod ros_practice::TestMessage
   (:init
    (&key
     ((:random_value __random_value) 0.0)
@@ -60,15 +60,15 @@
    self)
   )
 
-(setf (get pub_sub::TestMessage :md5sum-) "06e14fd41d63e9eb5e32e490cf8ee14a")
-(setf (get pub_sub::TestMessage :datatype-) "pub_sub/TestMessage")
-(setf (get pub_sub::TestMessage :definition-)
+(setf (get ros_practice::TestMessage :md5sum-) "06e14fd41d63e9eb5e32e490cf8ee14a")
+(setf (get ros_practice::TestMessage :datatype-) "ros_practice/TestMessage")
+(setf (get ros_practice::TestMessage :definition-)
       "float32 random_value
 string activity
 ")
 
 
 
-(provide :pub_sub/TestMessage "06e14fd41d63e9eb5e32e490cf8ee14a")
+(provide :ros_practice/TestMessage "06e14fd41d63e9eb5e32e490cf8ee14a")
 
 
