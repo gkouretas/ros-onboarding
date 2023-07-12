@@ -33,16 +33,16 @@
 
     <link name="link_0">
         <visual>
-            <origin xyz="0.0 0.0 5.0" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <cylinder radius="0.5" length="10"/>
+                <cylinder radius="0.5" length="3.0"/>
             </geometry>
             <material name="White"/>
         </visual>
         <collision>
-            <origin xyz="0.0 0.0 5.0" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <cylinder radius="0.5" length="10"/>
+                <cylinder radius="0.5" length="3.0"/>
             </geometry>
             <material name="White"/>
         </collision>
@@ -59,23 +59,23 @@
 
     <link name="link_1">
         <visual>
-            <origin xyz="0.0 0.0 5.0" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <cylinder radius="0.5" length="10"/>
+                <cylinder radius="0.5" length="3.0"/>
             </geometry>
             <material name="White"/>
         </visual>
         <collision>
-            <origin xyz="0.0 0.0 5.0" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <cylinder radius="0.5" length="10"/>
+                <cylinder radius="0.5" length="3.0"/>
             </geometry>
             <material name="White"/>
         </collision>
     </link>
 
     <joint name="J1" type="revolute">
-        <origin xyz="0.0 0.0 10.0" rpy="0 -1.5708 0"/>
+        <origin xyz="0.0 0.0 3.0" rpy="0 -1.5708 0"/>
         <parent link="link_0"/>
         <child link="link_1"/>
         <axis xyz="0 1 0"/>
@@ -84,23 +84,23 @@
 
     <link name="link_2">
         <visual>
-            <origin xyz="0.0 0.0 1.25" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 0.5" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <box size="2.5 2.5 2.5"/>
+                <box size="1.0 1.0 1.0"/>
             </geometry>
             <material name="White"/>
         </visual>
         <collision>
-            <origin xyz="0.0 0.0 1.25" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 0.5" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <box size="2.5 2.5 2.5"/>
+                <box size="1.0 1.0 1.0"/>
             </geometry>
             <material name="White"/>
         </collision>
     </link>
 
     <joint name="J2" type="revolute">
-        <origin xyz="0.0 0.0 10.0" rpy="0 0 0"/>
+        <origin xyz="0.0 0.0 3.0" rpy="0 0 0"/>
         <parent link="link_1"/>
         <child link="link_2"/>
         <axis xyz="0 0 1"/>
