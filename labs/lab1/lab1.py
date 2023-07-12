@@ -14,10 +14,7 @@ def ask_for_number() -> int:
         '''
         Internal function to validate input. Returns True/False if input is valid
         '''
-        if (user_input == desired_input):
-            return True
-        else:
-            return False
+        return (user_input == desired_input)
 
     N = random.randint(1, 10)
 
