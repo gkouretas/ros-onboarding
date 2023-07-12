@@ -476,6 +476,13 @@
 /home/gkouretas/code/ros-onboarding/ros_ws/build/srdfdom/CMakeFiles/test.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/srdfdom/CMakeFiles/rebuild_cache.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/srdfdom/CMakeFiles/edit_cache.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project/CMakeFiles/install/strip.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project/CMakeFiles/install/local.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project/CMakeFiles/install.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project/CMakeFiles/list_install_components.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project/CMakeFiles/rebuild_cache.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project/CMakeFiles/edit_cache.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project/CMakeFiles/test.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/moveit/moveit_commander/CMakeFiles/install/strip.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/moveit/moveit_commander/CMakeFiles/install/local.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/moveit/moveit_commander/CMakeFiles/install.dir

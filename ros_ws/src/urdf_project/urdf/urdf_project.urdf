@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="urdf_project">
+
+    <material name="White">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <link name="world"/>
+
+    <link name="base_link">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="1" length="1"/>
+            </geometry>
+            <material name="White"/>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="1" length="1"/>
+            </geometry>
+            <material name="White"/>
+        </collision>
+    </link>
+    
+    <joint name="J0" type="revolute">
+        <parent link="world"/>
+        <child link="base_link"/>
+        
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="0.0" upper="6.2831853" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <link name="link_1">
+        <visual>
+            <origin xyz="0.0 0.0 1.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="1 1 10"/>
+            </geometry>
+            <material name="White"/>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 1.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="1 1 10"/>
+            </geometry>
+            <material name="White"/>
+        </collision>
+    </link>
+
+    <joint name="J1" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="-1.5708 0 0"/>
+        <parent link="base_link"/>
+        <child link="link_1"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="0.0" upper="6.2831853" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <link name="link_2">
+        <visual>
+            <origin xyz="0.0 0.0 10.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="1 1 10"/>
+            </geometry>
+            <material name="White"/>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 10.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="1 1 10"/>
+            </geometry>
+            <material name="White"/>
+        </collision>
+    </link>
+
+    <joint name="J2" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0 1.5708 0"/>
+        <parent link="link_1"/>
+        <child link="link_2"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="0.0" upper="6.2831853" effort="0.0" velocity="0.0"/>
+    </joint>
+
+</robot>
+

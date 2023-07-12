@@ -1697,6 +1697,12 @@ ur_kinematics_DIR:PATH=ur_kinematics_DIR-NOTFOUND
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
 
+//Value Computed by CMake
+urdf_project_BINARY_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project
+
+//Value Computed by CMake
+urdf_project_SOURCE_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/src/urdf_project
+
 //The directory containing a CMake configuration file for urdfdom.
 urdfdom_DIR:PATH=/usr/lib/x86_64-linux-gnu/urdfdom/cmake
 
@@ -1912,7 +1918,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=146
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=147
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
