@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<robot name="urdf_project">
+    <material name="White">
+        <color rgba="1.0 1.0 1.0 1.0" />
+    </material>
+    <link name="world" />
+    <link name="base_link">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.5" />
+            <geometry>
+                <cylinder radius="1" length="1" />
+            </geometry>
+            <material name="White" />
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 -0.5" />
+            <geometry>
+                <cylinder radius="1" length="1" />
+            </geometry>
+            <material name="White" />
+        </collision>
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+        </inertial>
+    </link>
+    <joint name="base_joint" type="fixed">
+        <parent link="world" />
+        <child link="base_link" />
+        <origin rpy="0 0 0" xyz="0 0 1.0" />
+    </joint>
+    <link name="link_0">
+        <visual>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <cylinder radius="0.5" length="3.0" />
+            </geometry>
+            <material name="White" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <cylinder radius="0.5" length="3.0" />
+            </geometry>
+            <material name="White" />
+        </collision>
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+        </inertial>
+    </link>
+    <joint name="J0" type="revolute">
+        <parent link="base_link" />
+        <child link="link_0" />
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <axis xyz="0 0 1" />
+        <limit lower="0.0" upper="6.2831853" effort="0.0" velocity="0.0" />
+    </joint>
+    <link name="link_1">
+        <visual>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <cylinder radius="0.5" length="3.0" />
+            </geometry>
+            <material name="White" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 1.5" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <cylinder radius="0.5" length="3.0" />
+            </geometry>
+            <material name="White" />
+        </collision>
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+        </inertial>
+    </link>
+    <joint name="J1" type="revolute">
+        <origin xyz="0.0 0.0 3.0" rpy="0 -1.5708 0" />
+        <parent link="link_0" />
+        <child link="link_1" />
+        <axis xyz="0 1 0" />
+        <limit lower="-0.7853981625" upper="3.9269908125" effort="0.0" velocity="0.0" />
+    </joint>
+    <link name="link_2">
+        <visual>
+            <origin xyz="0.0 0.0 0.5" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <box size="1.0 1.0 1.0" />
+            </geometry>
+            <material name="White" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.5" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <box size="1.0 1.0 1.0" />
+            </geometry>
+            <material name="White" />
+        </collision>
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+        </inertial>
+    </link>
+    <joint name="J2" type="revolute">
+        <origin xyz="0.0 0.0 3.0" rpy="0 0 0" />
+        <parent link="link_1" />
+        <child link="link_2" />
+        <axis xyz="0 0 1" />
+        <limit lower="0.0" upper="6.2831853" effort="0.0" velocity="0.0" />
+    </joint>
+    <transmission name="trans_J0">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="J0">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="J0_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_J1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="J1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="J1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_J2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="J2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="J2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
+

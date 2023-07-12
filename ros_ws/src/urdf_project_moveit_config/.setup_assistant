@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: urdf_project
+    relative_path: urdf/urdf_project.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/urdf_project.srdf
+  CONFIG:
+    author_name: George Kouretas
+    author_email: gkouretas@scu.edu
+    generated_timestamp: 1689142079
