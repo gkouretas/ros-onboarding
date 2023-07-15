@@ -23,9 +23,12 @@ def tkinterPopUp(msg):
     window = tk.Tk()
     # window.overrideredirect(True)
     # window.attributes("-alpha", 0)
-    # window.update()
+
+    window.withdraw()
 
     messagebox.showinfo(title=None, message=msg)
+
+    window.destroy()
 
 class ConfigScreen:
     def __init__(self) -> None:
@@ -231,6 +234,7 @@ if __name__ == "__main__":
     # Initialize success flag
     success = False
 
+    tkinterPopUp(msg = "Select joint config for panda arm")
     while not success:
         # Set joint config from select screen
         joint_config: List[float] = ConfigScreen().run_joint_config(move_group.get_current_joint_values())
@@ -247,6 +251,7 @@ if __name__ == "__main__":
     # Reset success flag
     success = False
 
+    tkinterPopUp(msg = "Select target eef pose for panda arm")
     # Loop until a successful trajectory is completed
     while not success:
         # Set the target pose
@@ -267,6 +272,8 @@ if __name__ == "__main__":
     # It is always good to clear your targets after planning with poses.
     # Note: there is no equivalent function for clear_joint_value_targets().
     move_group.clear_pose_targets()
+
+    tkinterPopUp(msg = "Select trajectory via three sequential waypoints for the arm where you will pick up a box")
 
     # Create cartesian path
     waypoints: List[geometry_msgs.msg.Pose] = []
@@ -306,6 +313,8 @@ if __name__ == "__main__":
     grasping_group = "panda_hand"
     touch_links = robot.get_link_names(group=grasping_group)
     scene.attach_box(move_group.get_end_effector_link(), box_name, touch_links=touch_links)
+
+    tkinterPopUp(msg = "Select trajectory via three sequential waypoints for the arm to where the box will be placed")
 
     # Create cartesian path w/ collisions
     waypoints: List[geometry_msgs.msg.Pose] = []
