@@ -141,6 +141,13 @@
 /home/gkouretas/code/ros-onboarding/ros_ws/build/panda_moveit_config/CMakeFiles/rebuild_cache.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/panda_moveit_config/CMakeFiles/edit_cache.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/panda_moveit_config/CMakeFiles/test.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config/CMakeFiles/install/strip.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config/CMakeFiles/install/local.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config/CMakeFiles/install.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config/CMakeFiles/list_install_components.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config/CMakeFiles/rebuild_cache.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config/CMakeFiles/edit_cache.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config/CMakeFiles/test.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/geometric_shapes/CMakeFiles/rebuild_cache.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/geometric_shapes/CMakeFiles/edit_cache.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/geometric_shapes/CMakeFiles/test.dir
@@ -211,6 +218,13 @@
 /home/gkouretas/code/ros-onboarding/ros_ws/build/geometric_shapes/test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/geometric_shapes/test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/geometric_shapes/test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python/CMakeFiles/install/strip.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python/CMakeFiles/install/local.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python/CMakeFiles/install.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python/CMakeFiles/list_install_components.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python/CMakeFiles/rebuild_cache.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python/CMakeFiles/edit_cache.dir
+/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python/CMakeFiles/test.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/ros_practice/CMakeFiles/install/strip.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/ros_practice/CMakeFiles/install.dir
 /home/gkouretas/code/ros-onboarding/ros_ws/build/ros_practice/CMakeFiles/list_install_components.dir

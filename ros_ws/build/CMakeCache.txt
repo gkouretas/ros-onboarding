@@ -1461,6 +1461,12 @@ pcl_msgs_DIR:PATH=/opt/ros/noetic/share/pcl_msgs/cmake
 pcl_ros_DIR:PATH=/opt/ros/noetic/share/pcl_ros/cmake
 
 //Value Computed by CMake
+pick_place_python_BINARY_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/build/pick_place_python
+
+//Value Computed by CMake
+pick_place_python_SOURCE_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/src/pick_place_python
+
+//Value Computed by CMake
 pilz_industrial_motion_planner_BINARY_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/build/moveit/moveit_planners/pilz_industrial_motion_planner
 
 //Dependencies for the target
@@ -1703,6 +1709,12 @@ urdf_project_BINARY_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/build/
 //Value Computed by CMake
 urdf_project_SOURCE_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/src/urdf_project
 
+//Value Computed by CMake
+urdf_project_moveit_config_BINARY_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/build/urdf_project_moveit_config
+
+//Value Computed by CMake
+urdf_project_moveit_config_SOURCE_DIR:STATIC=/home/gkouretas/code/ros-onboarding/ros_ws/src/urdf_project_moveit_config
+
 //The directory containing a CMake configuration file for urdfdom.
 urdfdom_DIR:PATH=/usr/lib/x86_64-linux-gnu/urdfdom/cmake
 
@@ -1918,7 +1930,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=147
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=149
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

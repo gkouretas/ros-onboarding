@@ -1,0 +1,8 @@
+prefix=/home/gkouretas/code/ros-onboarding/ros_ws/install
+
+Name: pick_place_python
+Description: Description of pick_place_python
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
